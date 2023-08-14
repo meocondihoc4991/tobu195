@@ -1,142 +1,194 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>tobu195</title>
-	<link rel="icon" href="icon.png" type="image/x-icon">
-    <style>
-		html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    font-family: Courier New, sans-serif;
-}
-        body {
-    background-image: linear-gradient(to bottom right, #f3207a, #0bcde7); 
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
-    background-size: cover;
-}
+<style>
+	html{
+		font-family: Courier New, sans-serif;
+	}
+	
+	body {
+		background-image: linear-gradient(to bottom right, #f3207a, #0bcde7); 
+		background-repeat: no-repeat;
+		background-attachment: fixed; 
+		background-size: cover;
+	}
 
-		h1{
-			font-size:45px;
-		}
-        
-        #container {
-            display: flex;
-            align-items: top-center;
-            width: 85%;
-            background-color: none;
-			justify-content: center;
-			padding: 30px;
-        }
-		
-		#div-lienhe {
-			display: flex;
-			flex-direction: column;
-            align-items: center;
-            background-color: none;
-			justify-content: center;
-			padding: 30px;
-			color:white;
-        }
-		
-		#div-main {
-			display: flex;
-			flex-direction: column;
-            align-items: center;
-            background-color: none;
-			justify-content: center;
-			padding: 30px;
-			color:white;
-			
-        }
-        
-        #imageWrapper {
-            flex: 0 0 auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-right: 10px;
-        }
-        
-        #image {
-            width: 120px;
-            height: 120px;
-			border: 0 solid #e74c3c;
-            border-radius: 15px;
-        }
-        
-        #text {
-            flex: 1;
-            padding: 5px;
-            font-size: 15px;
-			display: flex;
-			flex-direction: column;
-			color: white;
-		
-        }
-		.button {
-			margin: 3px;
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 16px;			
-            background-color: #ffffff; 
-            color: black; 
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-            cursor: pointer;
-            transition: background-color 0.5s;
-			width:180px;
-			height:1rem;
-			text-align:center;
-        }
-        
-        .button:hover {
-            background-color: #1fa6cf; 
-        }
-		a {
-			color: #11cbf0; 
-		}
-    </style>
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+
+
+  .product-card {
+    border: 1px solid #ccc;
+    width: 29%;
+    margin: 20px 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image {
+    text-align: center;
+  }
+
+  .image img {
+    width: 120px;
+	height: 120px;
+	border: 0 solid #e74c3c;
+	border-radius: 15px;
+  }
+
+  .text {
+    text-align: left;
+    margin-top: 10px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+
+    .product-card {
+      width: 94%;
+    }
+  }
+
+  @media screen and (min-width: 769px) and (max-width: 1200px) {
+    .product-card {
+      width: 32%;
+    }
+  }
+  
+	h1{
+		font-size:45px;
+	}
+	
+	#div-lienhe {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-color: none;
+		justify-content: center;
+		padding: 30px;
+		color:white;
+	}
+	
+	a {
+		color: #11cbf0; 
+	}
+	
+	.button {
+		margin: 3px;
+		display: inline-block;
+		padding: 10px 20px;
+		font-size: 16px;			
+		background-color: #ffffff; 
+		color: black; 
+		border: none;
+		border-radius: 5px;
+		text-decoration: none;
+		cursor: pointer;
+		transition: background-color 0.5s;
+		width:180px;
+		height:1rem;
+		text-align:center;
+	}
+	
+	.button:hover {
+		background-color: #1fa6cf; 
+	}
+</style>
+<title>tobu195.github.io</title>
+<link rel="icon" href="icon.png" type="image/x-icon">
 </head>
 <body>
-	<div id="div-lienhe">
-	<h1>Liên hệ: </h1>
-	<h2>Facebook: <a href="https://www.facebook.com/tobu195">To Bự</a></h2>
-	<h2>Zalo: <a href="https://zalo.me/tobu195">0774905735</a> </h2>
-	<h2>Telegram: tobu195</h2>
 
+	<div id="div-lienhe">
+		<h2>Facebook: <a href="https://www.facebook.com/tobu195">To Bự</a></h2>
+		<h2>Zalo: <a href="https://zalo.me/tobu195">0774905735</a> </h2>
+		<h2>Telegram: tobu195</h2>
 	</div>
-	<div id="div-main">
-		<div id="container">
-			<div id="imageWrapper">
-				<img id="image" src="https://image.winudf.com/v2/image1/Y29tLndvcmxkbXUubmV0X2ljb25fMTY0MjIzODI1MF8wODM/icon.webp?w=140&fakeurl=1&type=.webp" alt="Hình ảnh">
-			</div>
-			<div id="text">
-				Phiên bản: 2<br>
-				Giá: 400k/tháng
-				<a class="button" href="https://drive.google.com/file/d/17KrRgmHgGRewHLD7EgG52DGUo-eMf7vr/view?usp=drive_link">Link tải</a>
-				<a class="button" href="https://youtu.be/CmOGAACCurw">Hướng dẫn cài đặt</a>
-			</div>
-			
-		</div>
 		
-		<!-- <div id="container"> -->
-			<!-- <div id="imageWrapper"> -->
-				<!-- <img id="image" src="https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/01/3d/7e/013d7e4d-53c3-42ea-4e25-26ac069353ca/AppIcon-0-0-1x_U007emarketing-0-0-0-10-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/230x0w.png" alt="Hình ảnh"> -->
+	<div class="container">
+		
+		
+		
+		<div class="product-card">
+			<div class="image">
+				<img src="lok2.png" alt="Image 1">
+			</div>
+			<h2>World Mu 2 (lok2)</h2>
+			____________________________
+			<!-- <div class="text"> -->
+				<!-- <p>Description lineiption lineiption lineiption line 1</p> -->
+				<!-- <p>Description line 2</p> -->
+				<!-- <p>Description line 3</p> -->
+				<!-- <p>Description line 4</p> -->
+				<!-- <p>Description line 5</p> -->
 			<!-- </div> -->
-			<!-- <div id="text"> -->
-				<!-- Phiên bản: 1.0.34<br> -->
-				<!-- Giá: Miễn phí<br> -->
-				<!-- <p>Link tải: kết bạn fb và inbox để lấy link tải)</p> -->				
-				<!-- <a class="button" href="https://www.facebook.com/tobu195">Hướng dẫn cài đặt</a> -->
-				 
+			<a class="button" href="https://drive.google.com/file/d/17KrRgmHgGRewHLD7EgG52DGUo-eMf7vr/view?usp=drive_link">Link tải</a>
+			<a class="button" href="https://youtu.be/CmOGAACCurw">Hướng dẫn cài đặt</a>
+		</div>
+		  
+		<!-- <div class="product-card"> -->
+			<!-- <div class="image"> -->
+				<!-- <img src="vlhk.png" alt="Image 1"> -->
+			<!-- </div> -->
+			<!-- <h2>Võ Lâm Hiệp Khách</h2> -->
+			<!-- ____________________________ -->
+			<!-- <div class="text"> -->
+				<!-- <p>Description lineiption lineiption lineiption line 1</p> -->
+				<!-- <p>Description line 2</p> -->
+				<!-- <p>Description line 3</p> -->
+				<!-- <p>Description line 4</p> -->
+				<!-- <p>Description line 5</p> -->
 			<!-- </div> -->
 		<!-- </div> -->
+
+		<!-- <div class="product-card"> -->
+			<!-- <div class="image"> -->
+				<!-- <img src="vlhk.png" alt="Image 1"> -->
+			<!-- </div> -->
+			<!-- <h2>Võ Lâm Hiệp Khách</h2> -->
+			<!-- ____________________________ -->
+			<!-- <div class="text"> -->
+				<!-- <p>Description lineiption lineiption lineiption line 1</p> -->
+				<!-- <p>Description line 2</p> -->
+				<!-- <p>Description line 3</p> -->
+				<!-- <p>Description line 4</p> -->
+				<!-- <p>Description line 5</p>				 -->
+			<!-- </div>			 -->
+		<!-- </div> -->
+
+		<!-- <div class="product-card"> -->
+			<!-- <div class="image"> -->
+				<!-- <img src="vlhk.png" alt="Image 1"> -->
+			<!-- </div> -->
+			<!-- <h2>Võ Lâm Hiệp Khách</h2> -->
+			<!-- ____________________________ -->
+			<!-- <div class="text"> -->
+				<!-- <p>Description lineiption lineiption lineiption line 1</p> -->
+				<!-- <p>Description line 2</p> -->
+				<!-- <p>Description line 3</p> -->
+				<!-- <p>Description line 4</p> -->
+				<!-- <p>Description line 5</p> -->
+			<!-- </div> -->
+		<!-- </div> -->
+
+
+
+
+
 	</div>
-	
+
 </body>
 </html>
